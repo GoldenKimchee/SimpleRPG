@@ -14,6 +14,7 @@ def type(string: typing.Sequence):
             sys.stdout.write(character)
             sys.stdout.flush()
             time.sleep(0.05) # Waits in between each letter typed (in seconds)
+        print()
 
 def slow_type(string: typing.Sequence):
     """Prints out letters one by one to console slowly."""
@@ -22,7 +23,8 @@ def slow_type(string: typing.Sequence):
         for character in line:
             sys.stdout.write(character)
             sys.stdout.flush()
-            time.sleep(0.4) # Waits longer between each letter typed
+            time.sleep(0.3) # Waits longer between each letter typed
+        print()
 
 def custom_type(string: typing.Sequence, speed: int, float):
     """Prints out letters one by one to console at speed specified."""
@@ -32,6 +34,7 @@ def custom_type(string: typing.Sequence, speed: int, float):
             sys.stdout.write(character)
             sys.stdout.flush()
             time.sleep(speed) # Waits whatever time the user specifies
+        print()
 
 def clear():
     """Clears the console."""
