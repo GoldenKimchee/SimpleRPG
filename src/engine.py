@@ -53,3 +53,12 @@ def get_input(responses: list) -> str:
         print("> ", end= "")
         user_response = input()
     return user_response
+
+def enter_to_continue():
+    """Waits for user to press enter to continue on."""
+    response = " "
+    while response != "":
+        type("Press enter to continue... ")
+        response = input()
+
+enter_to_continue()
